@@ -13,9 +13,10 @@ body{
     font-weight: 500;
     color: #edf7f6;
     font-size: 18px;
+    text-decoration: none;
     float: left;
 }
-.topNavBar a{
-    background-color: aquamarine;
+.topNavBar a:hover{
+    background-color: orange;
 }
 

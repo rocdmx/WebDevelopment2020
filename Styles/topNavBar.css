@@ -37,4 +37,8 @@ body{
 .topNavBarIndex a:hover{
     background-color: chartreuse;
 }
+.centrado{
+    font-style: italic;
+    text-align: center;
+}
 

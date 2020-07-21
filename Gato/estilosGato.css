@@ -1,0 +1,16 @@
+.celda{
+   
+        background-color:red;
+        width: 100px;
+        height:100px;
+        margin: 5px;
+        overflow: auto;
+        border: solid 1pt red;
+    }
+.j1{
+    background-color: teal;
+}
+
+.j2{
+    background-color: royalblue;
+}

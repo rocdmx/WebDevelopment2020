@@ -1,16 +1,16 @@
-var vocal
+var inicial;
+var vocales =["a", "e", "i", "o", "u",]
 
-function leerPalabra() {
-    
-    const array1 = ["a", "e", "i", "o", "u"];
-
-    console.log(array1.includes("e"));
-    if(num >=0){
-
-        document.getElementById("resultado").style = "Color:blue;"
-        }
-        else{
-            document.getElementById("resultado").style = "Color:red;"
-
-    const consonantes = ['b', 'c', 'd'];
+function guardarIncial() {
+    inicial = document.getElementById("palabra").value.toLowerCase()[0];
+    checarVocal();
+}
+ 
+function checarVocal(){
+    if (vocales.includes(inicial) == true){
+        document.getElementById("resultado").style = "Color:green;"
+    }
+    else{
+    document.getElementById("resultado").style = "Color:purple;"
+    }
 }

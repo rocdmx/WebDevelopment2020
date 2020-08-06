@@ -10,4 +10,16 @@ body{
     text-align: center;
     padding: 20px;
     margin: 10;
+    position: relative;
+}
+
+.precio{
+    font-size: 20pt;
+    position: absolute;
+    bottom: 5px;
+    right: 25px;
+}
+
+.modelo{
+    font-size: 25pt;
 }

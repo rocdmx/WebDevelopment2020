@@ -13,7 +13,7 @@ var producto2 = {
     "modelo": "Jordan",
     "tallas": [4,5,6,7,8],
     "precios": [600,640,700,760,800],
-    "inventario": [9,15,13,36,66]
+    "inventario": [9,15,13,36,66],
     "departamento": "Hombres",
     "categoría": "deportivo",
 }
@@ -59,6 +59,9 @@ console.log(deportivo)
 productos.forEach(
     p => (console.log("Nombre del producto: " + p.modelo))
 )
+
+productos.forEach(p => CrearTarjeta(p.modelo, p.marca, p.precios [2], p.departamento, p.categoría))
+
 function GenerarInventario (n) {
     var lista = []
     for (let index = 0; index < n; index++){
@@ -67,12 +70,35 @@ function GenerarInventario (n) {
     return lista
 }
 
-function CrearTarjeta (modelo, marca, precio, depto, categoría) {
-    card = document.createElement("div"
-    card.setAttribute("class", "product-card"))
+function CrearTarjeta (modelo, marca, precio, depto, categoria) {
+    card = document.createElement("div")
+    card.setAttribute("class", "product-card")
 
     m = document.createElement ("p")
     m.innerText =modelo
     m.setAttribute("class", "modelo")
-    card.appendChild(card)
+    card.appendChild(m)
+
+    mc = document.createElement ("p")
+    mc.innerText =marca
+    mc.setAttribute("class", "marca")
+    card.appendChild(mc)
+
+    p = document.createElement("p")
+    p.innerText = "$"+ precio
+    p.setAttribute("class", "precio")
+    card.appendChild(p)
+
+    d = document.createElement ("p")
+    d.innerText =depto
+    d.setAttribute("class", "depto")
+    card.appendChild(d)
+
+    c = document.createElement ("p")
+    c.innerText = categoria
+    c.setAttribute("class", "categoria")
+    card.appendChild(c)
+
+    document.body.appendChild(card)
 }
+

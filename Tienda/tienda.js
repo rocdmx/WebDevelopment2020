@@ -59,6 +59,19 @@ console.log(deportivo)
 productos.forEach(
     p => (console.log("Nombre del producto: " + p.modelo))
 )
+var marca;
+var producto;
+var precio;
+var depto;
+var categoria;
+
+function AgregarProdcuto(){
+marca = document.getElementById("t-marca").value;
+modelo = document.getElementById("t-modelo").value;
+precio = document.getElementById("t-precio").value;
+depto = document.getElementById("t-depto").value;
+categoria = document.getElementById("t-categoria").value;
+}
 
 productos.forEach(p => CrearTarjeta(p.modelo, p.marca, p.precios [2], p.departamento, p.categoría))
 

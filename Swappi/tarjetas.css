@@ -1,0 +1,18 @@
+body {
+    background-color: rgba(4, 10, 8, 0.815);
+    color: black;
+    text-align: center;
+    margin-top: 50px;
+}
+
+div{
+    height: 80px;
+}
+.card{
+    display: inline-block;
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    padding: 30px 10px 20px 10px;
+    box-shadow: black 5px 5px 10px;
+ }
